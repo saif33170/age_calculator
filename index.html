@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <!--style.css file-->
+    <link rel="stylesheet" href="/age_calculator/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Edu+VIC+WA+NT+Beginner&family=Merriweather:wght@300&family=Montserrat:wght@500&family=Poppins:wght@200;500;600&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@700&family=Roboto:ital,wght@1,900&family=Ubuntu:wght@400;700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Edu+VIC+WA+NT+Beginner&family=Merriweather:wght@300&family=Montserrat:wght@500&family=Poppins:wght@200;500;600&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@700&family=Roboto:ital,wght@1,900&family=Ubuntu:wght@500&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Edu+VIC+WA+NT+Beginner&family=Merriweather:wght@300&family=Montserrat:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@700&family=Roboto:ital,wght@1,900&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="display">
+            <h1>Age Calculator</h1>
+            <div class="error" id="error"></div>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="box">
+            <div class="fields">
+                <div class="form-group">
+                    <input type="number" id="birth-day" placeholder="DD" min="1" max="31" />
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="birth-month" placeholder="MM" min="1" max="12" />
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="birth-year" placeholder="YYYY" />
+                </div>
+            </div>
+            <div class="cb">
+                <button class="calc_btn" onclick="calculateAge()">Calculate</button>
+            </div>
+            
+        </div>
+
+        <button class="ref_btn" onclick="refreshPage()">Refresh</button>
+
+    </div>
+
+    <!--calc.js file-->
+    <script type="text/javascript" src="/age_calculator/calc.js"></script>
+</body>
+
+</html>
